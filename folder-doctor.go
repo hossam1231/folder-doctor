@@ -98,8 +98,8 @@ func copyFolder(srcPath, destPath string) error {
 }
 
 func main() {
-	srcPath := "./node_modules/@medusajs/admin-ui"
-	destPath := "./admin-ui"
+	srcPath := "../my-medusa-admin/node_modules/@medusajs/admin-ui"
+	destPath := "../medusa-admin_ui"
 
 	go watchFolder(srcPath, destPath)
 
