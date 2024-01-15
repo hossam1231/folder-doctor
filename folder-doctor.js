@@ -14,6 +14,7 @@ const colors = {
   magenta: "\x1b[35m",
   cyan: "\x1b[36m",
   brightGreen: "\x1b[32;1m",
+  brightCyan: "\x1b[36;1m",
   white: "\x1b[37m",
 };
 
@@ -70,7 +71,7 @@ function watchFolder(srcPath, destPath, ignoreFilter) {
       }
     });
 
-    console.log(`${colors.cyan}Watching for changes in: ${srcPath}${colors.reset}`);
+    console.log(`${colors.brightCyan}Watching for changes in: ${srcPath}${colors.reset}`);
   } catch (err) {
     console.error(`${colors.red}Error watching folder: ${err.message}${colors.reset}`);
   }
